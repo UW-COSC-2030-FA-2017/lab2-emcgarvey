@@ -4,7 +4,6 @@
 // Definition of methods for the List class.
 
 #include "LinkedList.h"
-
 #include <utility>
 
 

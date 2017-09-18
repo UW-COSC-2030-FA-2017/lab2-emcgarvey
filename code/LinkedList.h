@@ -11,11 +11,10 @@
 
 #ifndef _LINKED_LIST_H_
 #define _LINKED_LIST_H_
-
 #include <iostream>
 using std::ostream;
 
-#include "Node.cpp"
+#include "node.h"
 
 #define ulong unsigned long
 
@@ -53,8 +52,6 @@ public:
 	// post: the doubles in this List have been written to
 	//         outfile.
 	void print(ostream & outfile) const;
-
-
 	//*** Mutators ***
 
 	// post: x has been added as the first double in this

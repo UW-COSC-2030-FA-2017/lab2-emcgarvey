@@ -4,8 +4,6 @@
 
 
 #include "Node.h"
-
-
 Node::Node(double entry)
 	: entry_(entry), next_(NULL)
 {
