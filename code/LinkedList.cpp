@@ -63,7 +63,22 @@ double List::removeFirst()
 	delete tempPtr;
 	return item;
 }
-
+int List::getSize() const
+{
+	int size = 0;
+	Node * temp;
+	temp = first_;
+	if (!empty())
+	{
+		size += 1;
+		while (temp->next_ != NULL)
+		{
+			temp = temp->next_;
+			size++;
+		}
+	}
+	return size;
+}
 
 void List::print(ostream & outfile) const
 {

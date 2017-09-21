@@ -12,39 +12,53 @@
 int main()
 {
 	List cows;
-	cout << "cows list  :  " << cows << endl << endl;
-
+	cout << "cows list  :  " << cows << endl;
+	cout << "size: " << cows.getSize() << endl << endl;
 	cows.insertAsFirst(1.23);
 	cows.insertAsFirst(2.34);
-	cout << "cows list  :  " << cows << endl << endl;
+	cout << "cows list  :  " << cows << endl;
+	cout << "size: " << cows.getSize() << endl << endl;
 
 	cows.removeFirst();
-	cout << "cows list  :  " << cows << endl << endl;
-
+	cout << "cows list  :  " << cows << endl;
+	cout << "size: " << cows.getSize() << endl << endl;
 	List horses(cows);
 	cout << "cows list  :  " << cows << endl;
-	cout << "horses list:  " << horses << endl << endl;
+	cout << "size: " << cows.getSize() << endl;
+	cout << "horses list:  " << horses << endl;
+	cout << "size: " << horses.getSize() << endl << endl;
 
 	horses.removeFirst();
 	horses.insertAsFirst(5.67);
 	cows.insertAsFirst(6.78);
 	cout << "cows list  :  " << cows << endl;
-	cout << "horses list:  " << horses << endl << endl;
+	cout << "size: " << cows.getSize() << endl;
+	cout << "horses list:  " << horses << endl;
+	cout << "size: " << horses.getSize() << endl << endl;
 
 	List pigs;
 	cout << "cows list  :  " << cows << endl;
+	cout << "size: " << cows.getSize() << endl;
 	cout << "horses list:  " << horses << endl;
-	cout << "pigs list  :  " << pigs << endl << endl;
+	cout << "size: " << horses.getSize() << endl;
+	cout << "pigs list  :  " << pigs << endl;
+	cout << "size: " << pigs.getSize() << endl << endl;
 
 	pigs = cows;
 	cout << "cows list  :  " << cows << endl;
+	cout << "size: " << cows.getSize() << endl;
 	cout << "horses list:  " << horses << endl;
-	cout << "pigs list  :  " << pigs << endl << endl;
+	cout << "size: " << horses.getSize() << endl;
+	cout << "pigs list  :  " << pigs << endl;
+	cout << "size: " << pigs.getSize() << endl << endl;
 
 	pigs = horses;
 	cout << "cows list  :  " << cows << endl;
+	cout << "size: " << cows.getSize() << endl;
 	cout << "horses list:  " << horses << endl;
-	cout << "pigs list  :  " << pigs << endl << endl;
+	cout << "size: " << horses.getSize() << endl;
+	cout << "pigs list  :  " << pigs << endl;
+	cout << "size: " << pigs.getSize() << endl << endl;
 
 	cout << "End of code" << endl;
 

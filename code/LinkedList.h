@@ -62,11 +62,11 @@ public:
 	// post: the first double in this List has been removed
 	//         from this List and has been returned.
 	double removeFirst();
+	int getSize() const;
 
 private:
 	//*** Inaccessible standard functions ***
-
-
+	
 	//*** Helper functions ***
 	// process part of the linked structure
 
