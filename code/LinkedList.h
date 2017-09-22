@@ -63,6 +63,7 @@ public:
 	//         from this List and has been returned.
 	double removeFirst();
 	int getSize() const;
+	double getSum() const;
 
 private:
 	//*** Inaccessible standard functions ***

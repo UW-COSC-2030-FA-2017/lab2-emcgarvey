@@ -66,10 +66,9 @@ double List::removeFirst()
 int List::getSize() const
 {
 	int size = 0;
-	Node * temp;
-	temp = first_;
 	if (!empty())
 	{
+		Node * temp = first_;
 		size += 1;
 		while (temp->next_ != NULL)
 		{
@@ -78,6 +77,21 @@ int List::getSize() const
 		}
 	}
 	return size;
+}
+double List::getSum() const
+{
+	double sum = 0.0;
+	if (!empty())
+	{
+		Node * temp = first_;
+		sum = first_->entry_;
+		while (temp->next_ != NULL)
+		{
+			temp = temp->next_;
+			sum += temp->entry_;
+		}
+	}
+	return sum;
 }
 
 void List::print(ostream & outfile) const
