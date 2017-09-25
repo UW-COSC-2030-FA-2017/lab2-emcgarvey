@@ -64,6 +64,7 @@ public:
 	double removeFirst();
 	int getSize() const;
 	double getSum() const;
+	void insertAsLast(double x);
 
 private:
 	//*** Inaccessible standard functions ***

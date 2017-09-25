@@ -17,6 +17,7 @@ int main()
 	cout << "sum: " << cows.getSum() << endl << endl;
 	cows.insertAsFirst(1.23);
 	cows.insertAsFirst(2.34);
+	cows.insertAsLast(4.57);
 	cout << "cows list  :  " << cows << endl;
 	cout << "size: " << cows.getSize() << endl;
 	cout << "sum: " << cows.getSum() << endl << endl;
@@ -35,6 +36,7 @@ int main()
 
 	horses.removeFirst();
 	horses.insertAsFirst(5.67);
+	horses.insertAsLast(9.12);
 	cows.insertAsFirst(6.78);
 	cout << "cows list  :  " << cows << endl;
 	cout << "size: " << cows.getSize() << endl;

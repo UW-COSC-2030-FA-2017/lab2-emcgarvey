@@ -93,6 +93,22 @@ double List::getSum() const
 	}
 	return sum;
 }
+void List::insertAsLast(double x)
+{
+	if (empty())
+	{
+		insertAsFirst(x);
+	}
+	else
+	{
+		Node * temp = first_;
+		while (temp->next_ != NULL)
+		{
+			temp = temp->next_;
+		}
+		temp->next_ = new Node(x, NULL);
+	}
+}
 
 void List::print(ostream & outfile) const
 {
